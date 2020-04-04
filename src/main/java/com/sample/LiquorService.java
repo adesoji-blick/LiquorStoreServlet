@@ -21,6 +21,10 @@ public class LiquorService {
         }else if(type.equals(LiquorType.WHISKY)){
             brands.add("Glenfiddich");
             brands.add("Johnnie Walker");
+            
+        }else if(type.equals(LiquorType.JUICE)){
+            brands.add("Eva");
+            brands.add("Chi Exotic");
 
         }else if(type.equals(LiquorType.BEER)){
             brands.add("Corona");
