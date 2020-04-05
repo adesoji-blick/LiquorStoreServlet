@@ -10,7 +10,7 @@ pipeline {
          stage ('Second stage') {
              steps {
                  echo "Deploying code"
-                 sh 'sudo cp target/WinePortal.war /usr/share/tomcat/webapps'
+                 sh 'sudo cp target/WineBank.war /usr/share/tomcat/webapps'
                  echo "Successfully deployed"
              }
          }
