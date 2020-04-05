@@ -19,7 +19,7 @@
     </dependencies>
 
     <build>
-        <finalName>WinePortal</finalName>
+        <finalName>WineBank</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
