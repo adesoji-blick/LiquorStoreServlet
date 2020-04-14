@@ -2,15 +2,17 @@ pipeline {
     agent any
 
     stages {
-         stage ('compile code') {
+         stage ('stage one') {
              steps {
-                sh 'mvn clean package'
+                echo 'building package'
+		sh 'mvn clean package'
              }
          }
 
-         stage ('copy package') {
+         stage ('stage two') {
              steps  {
                  sh 'sudo cp target/SampleServlet.war /usr/share/tomcat/webapps'
+		 echo 'successfuly deployed'
              }
          }
         
