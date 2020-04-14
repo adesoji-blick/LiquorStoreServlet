@@ -10,7 +10,7 @@ pipeline {
 
          stage ('copy package') {
              steps  {
-                 sh 'sudo cp /target/SampleServlet.war /usr/share/tomcat/webapps'
+                 sh 'sudo cp target/SampleServlet.war /usr/share/tomcat/webapps'
              }
          }
         
